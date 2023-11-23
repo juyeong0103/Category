@@ -10,8 +10,10 @@ public class BankAccount {
 	{
 		System.out.print("Depositing " + amount);
 		double newBalance = balance + amount;
+		System.out.println();
 		System.out.println(", new balance is " + newBalance);
 		balance = newBalance;
+		
 	}
 	
 	public void withdraw(double amount) {

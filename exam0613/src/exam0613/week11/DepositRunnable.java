@@ -2,6 +2,7 @@ package exam0613.week11;
 
 public class DepositRunnable implements Runnable {
 
+
 	public DepositRunnable (BankAccount anAccount,
 			double anAmount, int aCount)
 	{
@@ -9,7 +10,6 @@ public class DepositRunnable implements Runnable {
 		amount = anAmount;
 		count = aCount;
 	}
-	
 	public void run() {
 		try {
 			for (int i = 1; i <= count; i++) {
@@ -18,7 +18,7 @@ public class DepositRunnable implements Runnable {
 			}
 		}
 		catch (InterruptedException exception) {
-	}
+		}
 	}
 	private static final int DELAY = 1;
 	private BankAccount account;

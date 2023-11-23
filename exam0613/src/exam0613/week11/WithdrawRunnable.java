@@ -2,15 +2,16 @@ package exam0613.week11;
 
 public class WithdrawRunnable implements Runnable  {
 
-	public WithdrawRunnable(BankAccount anAccount,
-			double anAmount,
-			int aCount)
-	{
+	public WithdrawRunnable(BankAccount anAccount, double anAmount, int aCount) {
 
 		account = anAccount;
 		amount = anAmount;
 		count = aCount;
 	}
+
+
+
+
 
 	public void run() {
 		try {

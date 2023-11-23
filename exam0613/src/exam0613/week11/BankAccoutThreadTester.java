@@ -6,7 +6,7 @@ public class BankAccoutThreadTester {
 		
 		BankAccount account = new BankAccount();
 		final double AMOUNT = 100;
-		final int REPETITIONS = 1000;
+		final int REPETITIONS = 10;
 		
 		DepositRunnable d = new DepositRunnable(account, AMOUNT, REPETITIONS);
 		WithdrawRunnable w = new WithdrawRunnable(account, AMOUNT, REPETITIONS);
